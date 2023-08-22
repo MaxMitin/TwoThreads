@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="447.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.twothreads.HelloController">
+    <children>
+        <Button fx:id="sender1" layoutX="90.0" layoutY="52.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="357.0" text="Отправитель 1" />
+        <Button fx:id="sender2" layoutX="513.0" layoutY="52.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="357.0" text="Отправитпель 2" />
+        <TableView fx:id="table" layoutX="27.0" layoutY="108.0" prefHeight="315.0" prefWidth="899.0" />
+    </children>
+</AnchorPane>
