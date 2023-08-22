@@ -27,10 +27,10 @@ public class HelloController {
 
     public void initialize()
     {
-        MyMessage worker1 = new MyMessage(10, "1-ый Генератор", messages2);
-        MyMessage worker2 = new MyMessage(20, "2-ой Генератор", messages2);
-        sender1.setOnAction(actionEvent -> worker1.start());
-        sender2.setOnAction(actionEvent -> worker2.start());
+        MyMessage obSender1 = new MyMessage(10, "1-ый Генератор", messages2);
+        MyMessage obSender2 = new MyMessage(20, "2-ой Генератор", messages2);
+        sender1.setOnAction(actionEvent -> obSender1.start());
+        sender2.setOnAction(actionEvent -> obSender2.start());
 
         messages2.addListener((ListChangeListener<String>) change -> {
             while(change.next())
